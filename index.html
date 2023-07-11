@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script> 
+    <title>Task Manager App</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <link rel = "icon" href = "https://t.pimg.jp/061/879/481/5/61879481.jpg" > 
+   
+</head>
+
+<body>
+    <div class="bg">
+        <div class="todos-bg-container" id="backgroundColor">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="bgText" class="text-right pt-4"><button id="bgButton" class="btn">Dark Mode</button></div>
+                        <h1 class="todos-heading" id="taskManager">Task Manager🤺 </h1>
+                        <h4 class="pt-2" id="smallHead">You can create a task ,Save it, strike off it as done , and you can delete it.</h4>
+                        <h1 class="create-task-heading" id="createTask">
+                            Create <span class="create-task-heading-subpart">Task</span>
+                        </h1>
+                        <label for="todoUserInput" style="color:#FA8072" class="mt-2">Write your task here</label>
+                        <input type="text" id="todoUserInput" class="todo-user-input" placeholder="What needs to be done ?" />
+                        <!-- <textarea placeholder = "Description" class = "mt-3 mb-4"></textarea> -->
+                        <button class="add-todo-button mt-4" id="addTodoButton">Add</button>
+                        <h1 class="todo-items-heading " id="myTasks">
+                            My <span class="todo-items-heading-subpart">Tasks</span>
+                        </h1>
+                        <p style="color:#FA8072">Here goes your tasks </p>
+
+
+                        <ul class="todo-items-container" id="todoItemsContainer"></ul>
+                        <button class="add-todo-button" id="saveButton">Save</button>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
